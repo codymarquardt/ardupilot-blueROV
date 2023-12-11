@@ -84,6 +84,7 @@ void GCS_MAVLINK_Sub::send_banner()
 
 void GCS_MAVLINK_Sub::send_nav_controller_output() const
 {
+   /* 
     const Vector3f &targets = sub.attitude_control.get_att_target_euler_cd();
     mavlink_msg_nav_controller_output_send(
         chan,
@@ -95,6 +96,7 @@ void GCS_MAVLINK_Sub::send_nav_controller_output() const
         sub.pos_control.get_pos_error_z_cm() * 1.0e-2f,
         0,
         0);
+   */
 }
 
 int16_t GCS_MAVLINK_Sub::vfr_hud_throttle() const
